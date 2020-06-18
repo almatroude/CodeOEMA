@@ -16,8 +16,8 @@ int sum(int N)
 {
     int S1, S2;
 
-    S1 = ((N / 3)) * (2 * 3 + (N / 3 - 1) * 3) / 2;
-    S2 = ((N / 4)) * (2 * 4 + (N / 4 - 1) * 4) / 2;
+    S1 = N / 3 * (2 * 3 + (N / 3 - 1) * 3) / 2;
+    S2 = N / 4 * (2 * 4 + (N / 4 - 1) * 4) / 2;
 
     return S1 + S2;
 }
@@ -26,7 +26,7 @@ int sum(int N)
 int main()
 {
     int N;
-    cout << "please enter the number that you want to find the sum of all natural numbers  divisible by 3 or 4, from 1 to the number you want " << endl;
+    cout << "Enter limit" << endl;
     cin >> N;
 
     cout << "the sum of the numbers divisible by 3 or 4  from 1 up " << N << " is  " << sum(N) << endl;
