@@ -1,35 +1,32 @@
-/*Write a program that calculates and prints 
-the sum of all the natural numbers divisible by 
-either 3 or 5, up to a given limit entered by the user. */
+/*Write a program that calculates and prints the sum of all the natural numbers divisible by
+either 3 or 5, up to a given limit entered by the user.
+NOTE: Or mean either divisible by 3, 5 or both*/
 
-/* ANALYSIS */
-
-// formula to calculate the sum of numbers divisible by 3 or 4 from 1 to the limit the user want
-// sum Sn= n/2 [2a + (n - 1)d].
-// where n is the total number of terms in the series
-// ..... a is the first term
-// ..... d is the common difference
 #include <iostream>
 using namespace std;
 
-int sum(int N)
-{
-    int S1, S2;
-
-    S1 = N / 3 * (2 * 3 + (N / 3 - 1) * 3) / 2;
-    S2 = N / 5 * (2 * 5 + (N / 5 - 1) * 5) / 2;
-
-    return S1 + S2;
-}
-
-// main function;
 int main()
 {
-    int N;
-    cout << "Enter limit" << endl;
-    cin >> N;
+    int n;
+    int i;
+    int sum=0;
 
-    cout << "the sum of the numbers divisible by 3 or 4  from 1 up " << N << " is  " << sum(N) << endl;
+    
+
+    cout << "Enter Limit" << endl;
+    cin >> n;
+
+    for (i = 0; i <= n; i++)
+
+    {
+
+        if ((i % 3 == 0 || i % 5 == 0))
+        {
+            sum = sum + i;
+        }
+    }
+
+    cout << "The sum of all natural numbers divisible by 3 or 5 from 1 up to " << n<< " is " << sum<<endl;
 
     return 0;
 }
