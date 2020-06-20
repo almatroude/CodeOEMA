@@ -9,9 +9,7 @@ int main()
 {
     int n;
     int i;
-    int sum=0;
-
-    
+    int sum = 0;
 
     cout << "Enter Limit" << endl;
     cin >> n;
@@ -20,13 +18,13 @@ int main()
 
     {
 
-        if ((i % 3 == 0 || i % 5 == 0))
+        if (i % 3 == 0 || i % 5 == 0)
         {
             sum = sum + i;
         }
     }
 
-    cout << "The sum of all natural numbers divisible by 3 or 5 from 1 up to " << n<< " is " << sum<<endl;
+    cout << "The sum of all natural numbers divisible by 3 or 5 from 1 up to " << n << " is " << sum << endl;
 
     return 0;
 }
