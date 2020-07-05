@@ -6,22 +6,25 @@ three times the index variable. Output the array so that 10 elements per line
 are printed.
 */
 
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
     int epsilon[20];
-    
-    for(int i=0; i<10; i++){
+
+    for (int i = 0; i < 10; i++)
+    {
         epsilon[i] = i * i * i;
-        cout<< epsilon [i]<<"\n\n";
-        
+        cout << epsilon[i] << "   ";
     }
-    for (int i=10; i<20; i++){
-            epsilon[i] =3*i;
-            cout<<epsilon [i]<<"\n\n";
-        }
+    cout << endl;
+    for (int j = 10; j < 20; j++)
+    {
+        epsilon[j] = 3 * j;
+        cout << epsilon[j] << "   ";
+    }
+    cout<<endl;
     return 0;
 }
