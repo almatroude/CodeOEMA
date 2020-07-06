@@ -12,7 +12,7 @@ int main()
     int odd_sum = 0;
     int even_sum = 0;
     int n;
-    int odd_sum_and_even_sum = 0;
+    
 
     cout << "please enter the size of the array:";
     cin >> n;
@@ -24,12 +24,14 @@ int main()
     {
         cin >> size[i];
     }
+
     for (int i = 0; i < n; i++)
     {
         if (size[i] % 2 == 0)
         {
             even_sum += size[i];
         }
+        
         else
         {
             odd_sum += size[i];
@@ -38,6 +40,5 @@ int main()
     cout << "the sum of odd numbers are: " << odd_sum << endl;
     cout << "the sum of even numbers are:" << even_sum << endl;
 
-    
-    return 0;
+        return 0;
 }
