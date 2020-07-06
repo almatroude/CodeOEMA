@@ -17,13 +17,13 @@ int main()
     for (int i = 0; i < 10; i++)
     {
         epsilon[i] = i * i * i;
-        cout << epsilon[i] << "   ";
+        cout << epsilon[i]<<"   ";
     }
     cout << endl;
-    for (int j = 10; j < 20; j++)
+    for (int i = 10; i < 20; i++)
     {
-        epsilon[j] = 3 * j;
-        cout << epsilon[j] << "   ";
+        epsilon[i] = 3 * i;
+        cout << epsilon[i]<<"   ";
     }
     cout<<endl;
     return 0;
