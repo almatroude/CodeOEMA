@@ -19,12 +19,16 @@ int main()
         epsilon[i] = i * i * i;
         cout << epsilon[i]<<"   ";
     }
+
     cout << endl;
+
     for (int i = 10; i < 20; i++)
     {
         epsilon[i] = 3 * i;
         cout << epsilon[i]<<"   ";
     }
-    cout<<endl;
+
+    cout<< endl;
+    
     return 0;
 }
