@@ -18,13 +18,12 @@ int main()
 {
     int number;
 
-    cout << "please enter the number you want to determine weather is positive number, negative number or zero" << endl;
+    cout << "please enter the number  " << endl;
     cin >> number;
 
     if (number > 0)
     {
-        cout << number << " "
-             << "is a positive number" << endl;
+        cout << number << " "<< "is a positive number" << endl;
     }
 
     else if (number < 0)
@@ -33,7 +32,7 @@ int main()
              << "is a nagetive number" << endl;
     }
 
-    if (number == 0)
+    else 
     {
         cout << number << " "
              << "is zero" << endl;
